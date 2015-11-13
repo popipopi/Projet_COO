@@ -28,6 +28,7 @@ public class ChessGame extends Observable{
 				m_echiquier.switchJoueur(); // si le deplacement est possible, on change de joueur
 				result =true;
 			}
+		//this.notifyObservers();
 		return result;
 
 	}

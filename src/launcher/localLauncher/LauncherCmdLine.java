@@ -14,12 +14,14 @@ public class LauncherCmdLine {
 	public static void main(String[] args) {		
 		
 		ChessGame chessGame;
-		ChessGameControler chessGameControler;		
+		ChessGameControler chessGameControler;
+		ChessGameCmdLine vue_console;
 		
 		chessGame = new ChessGame();	
 		chessGameControler = new ChessGameControler(chessGame);
 		
-		new ChessGameCmdLine(chessGameControler);	
+		vue_console = new ChessGameCmdLine(chessGameControler);
+		//chessGame.addObserver(vue_console);
 	}
 
 }
